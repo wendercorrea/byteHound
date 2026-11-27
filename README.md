@@ -2,7 +2,21 @@
 
 Analisador de espaço em disco para Windows. **Software gratuito (freeware).** Veja a [licença](LICENSE.md).
 
-![Tela principal do ByteHound](imagens/01-tela-principal.png)
+# ByteHound 0.4.1 — notas de versão
+
+<img width="1607" height="1033" alt="image" src="https://github.com/user-attachments/assets/9f41128e-faa6-4960-a244-8cf515d23674" />
+
+
+## Correções
+
+### Aba Árvore e mapa
+- O mapa e a prévia ficam em cima; a árvore de pastas e as extensões, embaixo, com divisória ajustável e altura mínima para não sumirem. Em uma área baixa demais para os dois mínimos, cada parte fica com metade.
+- Com a árvore minimizada, a barra dela fica embaixo; com o mapa minimizado, a barra dele fica em cima.
+- O conteúdo que não cabe em um painel é recortado, em vez de fazê-lo crescer. Há um teste automatizado para o layout cujo cenário inclui uma prévia alta de foto com EXIF.
+
+### Compilação
+- `build.rs` resolve os caminhos das traduções embutidas a partir da pasta do projeto compilado, evitando erro de build com cache gerado em outra pasta.
+---
 
 📘 **[Manual completo, com as telas](MANUAL-ByteHound.md)**
 
